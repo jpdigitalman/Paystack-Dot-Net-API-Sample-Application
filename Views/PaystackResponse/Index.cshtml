@@ -1,0 +1,20 @@
+﻿@model Paystack.Net.Models.TransactionResponseModel
+
+@{
+    Layout = null;
+}
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="margin-top:40px">
+    <h2>Success Response</h2>
+    <pre>
+
+        @Html.Raw(Json.Encode(Model));
+
+    </pre>
+
+</div>
